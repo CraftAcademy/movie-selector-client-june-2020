@@ -95,9 +95,8 @@ class Movie extends Component {
            
         </div>
         <div>
-        <Segment inverted floated="right">
-        <Menu inverted pointing secondary>
-          <Menu.Menu position="right">
+       
+       
         {this.props.authenticated && (
        
           <Button color='black'
@@ -112,9 +111,8 @@ class Movie extends Component {
           </>
         
         }
-         </Menu.Menu>
-         </Menu>
-        </Segment>
+        
+     
         
        
 </div>
