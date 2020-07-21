@@ -95,7 +95,7 @@ class Movie extends Component {
            
         </div>
         <div>
-       
+        <Segment style={{ marginLeft: '5em', marginRight: '25em', marginTop: '2em' }}>
        
         {this.props.authenticated && (
        
@@ -112,7 +112,7 @@ class Movie extends Component {
         
         }
         
-     
+     </Segment>
         
        
 </div>
