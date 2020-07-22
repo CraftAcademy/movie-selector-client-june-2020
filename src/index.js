@@ -6,7 +6,13 @@ import axios from "axios"
 import './index.css'
 import { StripeProvider } from "react-stripe-elements"
 
-axios.defaults.baseURL = "http://localhost:3000/api/v1"
+let apiUrl
+if (process.env.NODE_ENV === 'production' )  {
+  apiUrl = 'https://movie-selector-api.herokuapp.com/api/v1'
+} else {
+  apiUrl = 'http://localhost:3000/api/v1'
+}
+axios.defaults.baseURL = apiUrl
 
 ReactDOM.render(
   <StripeProvider apiKey="pk_test_QicERB8w3kyqaYW3hUUQylRH">
